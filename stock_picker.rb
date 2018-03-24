@@ -1,5 +1,6 @@
+#stock picker ruby project
+# Henry M Kirya - Uganda
 
-#ray = [17,3,6,9,15,8,6,1,10]
 def stock_picker(ray)
 	days = []
 	proft = 0
