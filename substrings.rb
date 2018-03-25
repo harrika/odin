@@ -16,6 +16,7 @@ def substrings (word, dict)
 	return bigash	
 end
 
-dic = ["below","down","go","going","horn","how","howdy","it","i","low"]
-p substrings("its going low and lower", dic)
-  
+
+dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+p substrings("below", dictionary)
+# p substrings("going below", dictionary)
