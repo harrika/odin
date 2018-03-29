@@ -1,5 +1,5 @@
 # bubble_sort that takes an array and returns a sorted array.
-# It uses the bubble sort \lgorithm
+# It uses the bubble sort algorithm
 # Henry Kirya
 
 
@@ -7,16 +7,14 @@
 def bubble_sort(ray)
 	n = ray.length-1		
 	loop do 
-		swpd = false
-		#rr = Array.new(n-1) {|i| i+1 }
+		swpd = false		
 		rr = 0.step(n-1).to_a
 		for c in rr do
 	 	  if (ray[c] > ray[c+1]) 
 	 	  	tt = ray[c]
 	 	  	ray[c] = ray[c+1]
 	 	  	ray[c+1] = tt
-	 	  	swpd = true
-	 	  	#puts "swapped #{ray}" 	  	
+	 	  	swpd = true	 	  	
 	 	  end #end if 	 
 	 	end #end for 
 	break if swpd == false
