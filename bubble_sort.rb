@@ -33,11 +33,7 @@ def bubble_sort_by(ray)
 		rr = 0.step(n-1).to_a
 		for c in rr do
 		  if yield(ray[c], ray[c+1]) > 0
-		  	ray[c], ray[c+1] = ray[c+1], ray[c]     	        	
-	 	  # if (ray[c] > ray[c+1]) 
-	 	  # 	tt = ray[c]
-	 	  # 	ray[c] = ray[c+1]
-	 	  # 	ray[c+1] = tt
+		  	ray[c], ray[c+1] = ray[c+1], ray[c]     	        		 	  
 	 	  	swpd = true	 	  	
 	 	  end #end if 	 
 	 	end #end for 
