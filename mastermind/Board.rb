@@ -9,15 +9,7 @@ class Board
 	@@scratch = [[],[],[],[],[],[],[],[],[],[],[]]
 	@@message = ""	
 	@@count = 0
-	@@code = @@colors.sample(4)
-
-	def gencode (ray, n)
-		result = []
-		n.times do 
-		    result << ray[rand(ray.length)]
-		end
-		return result
-	end
+	@@code = @@colors.sample(4)	
 
 	def initialize
 		@@message = ""
