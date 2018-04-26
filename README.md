@@ -1,1 +1,5 @@
-"# odin" 
+
+odin projects 
+Intermediate ruby
+
+
