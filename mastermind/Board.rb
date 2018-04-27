@@ -2,20 +2,18 @@
 # Board Class
 # ------------------------------------------------------------------
 
-class Board 	
-	@@colors = ['Y','O','R','G','W','B']
-	@@bd = []
-	@@hnt = []	
-	@@scratch = [[],[],[],[],[],[],[],[],[],[],[]]
-	@@message = ""	
-	@@count = 0
-	@@code = @@colors.sample(4)	
+class Board 		
 
-	def initialize
-		@@message = ""
+	def initialize	
+		@@colors = ['Y','O','R','G','W','B']
+		@@bd = []
+		@@hnt = []	
+		@@scratch = [[],[],[],[],[],[],[],[],[],[],[]]	
+		@@count = 0
+		@@code = @@colors.sample(4)		
 		display
 		puts "Mastermind initailized"
-	end
+	end	
 
 	def bdclear
 		@@bd = []
@@ -30,9 +28,9 @@ class Board
 	end
 	
 	def display					
-		system "cls" or system 'clear'
-		puts ""
+		system "cls" or system 'clear'		
 		puts "MASTERMIND colour codes: "
+		puts "brought to you by Henry Mukomba Kirya"
 		puts ""
 	    puts "  Y: yellow"
 	    puts "  O: Orange"

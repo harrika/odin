@@ -9,23 +9,11 @@ cc = 0
 games = 10
 
 while cc < games
-	board.loadbd	
-	puts "calculating hint .........."		
+	board.loadbd		
 	board.hintcalc		
 	board.display
 	board.incount
-	board.choices(0)	
-	board.choices(1)	
-	board.choices(2)	
-	board.choices(3)
-	board.choices(4)	
-	board.choices(5)	
-	board.choices(6)	
-	board.choices(7)
-	board.choices(8)	
-	board.choices(9)	
-	board.choices(10)	
-	
+	(0..games).each { |w| board.choices(w) }	
 	if board.winchk	
 		puts ""
 		puts " **** %%%% ***** YOU ARE A WINNER **** %%%% *****"
@@ -44,5 +32,6 @@ end
 
 if !board.winchk
 	puts 'GAME OVER'
+	puts "#{board.code} ------ see the winning code!"
 end
 
