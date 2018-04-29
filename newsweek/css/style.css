@@ -176,6 +176,22 @@ h3 {
 	margin: 0;
 }
 
+.heading {
+	font-size: 15px;
+	font-weight: 600;
+	color: #606060;	
+}
+
+.mm a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;	
+}
+.mm a:hover {	
+	color: red;	
+	text-decoration: none;
+}
+
 .page-footer {
     border-top: 2px solid #f4f5f6;
     background-color: white;
